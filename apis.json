@@ -1,0 +1,100 @@
+{
+    "name": "Gigya",
+    "description": "Identify, engage & build single customer views to create relevant, personalized experiences. Designed to meet privacy, compliance & security best practices.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/600-gigya.jpg",
+    "tags": [
+        "api provider",
+        "authentication",
+        "have api",
+        "social",
+        "social sharing",
+        "webhook implementations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/gigya\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Gigya",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/600-gigya.jpg",
+            "humanURL": "http:\/\/gigya.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/gigya-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/socialize.gigya.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.gigya.com"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.gigya.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/gigya"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/gigya"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/developers.gigya.com\/"
+        },
+        {
+            "type": "Email",
+            "url": "press@gigya.com"
+        },
+        {
+            "type": "Email",
+            "url": "jobs@gigya.com"
+        },
+        {
+            "type": "Email",
+            "url": "cookies@gigya.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@gigya.com"
+        },
+        {
+            "type": "Email",
+            "url": "support@gigya.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/gigya"
+        },
+        {
+            "type": "Partners",
+            "url": "http:\/\/www.gigya.com\/partners\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/Gigya"
+        },
+        {
+            "type": "Webhooks",
+            "url": "https:\/\/developers.gigya.com\/display\/GD\/Webhooks"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/gigya.com\/"
+        }
+    ]
+}
