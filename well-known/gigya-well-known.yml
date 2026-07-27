@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: probed /.well-known/ across Gigya (SAP Customer Data Cloud) REST hosts
+host: https://accounts.us1.gigya.com
+documents:
+  - path: /.well-known/oauth-authorization-server   # RFC 8414
+    status: 200
+    file: gigya-oauth-authorization-server.json
+  - path: /.well-known/openid-configuration          # OIDC discovery (per-apiKey OP, not at host root)
+    status: 404
+  - path: /.well-known/security.txt                   # RFC 9116
+    status: 404
+notes: >-
+  accounts.{dc}.gigya.com exposes RFC 8414 OAuth 2.0 authorization-server
+  metadata (issuer https://oauth2.gigya.com; client_credentials + refresh_token
+  grants). The OIDC discovery document is served per-apiKey under the OIDC OP
+  path, not at the host root, so a root probe returns 404. No security.txt is
+  published at the API host. The legacy gigya.com marketing domain no longer
+  resolves (NXDOMAIN) — the live surface is help.sap.com docs plus the
+  accounts.{dc}.gigya.com REST hosts.

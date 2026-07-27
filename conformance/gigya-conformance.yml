@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  well-known/gigya-oauth-authorization-server.json (RFC 8414);
+  SAP Customer Data Cloud documentation on help.sap.com.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      RFC 8414 authorization-server metadata published at
+      accounts.us1.gigya.com/.well-known/oauth-authorization-server
+      (client_credentials + refresh_token grants).
+  - id: rfc8414-as-metadata
+    conforms: true
+    evidence: /.well-known/oauth-authorization-server returns 200 with issuer/token/introspection/revocation/jwks endpoints.
+  - id: oidc
+    conforms: true
+    evidence: >-
+      SAP CDC operates as an OpenID Connect provider (per-apiKey OP), with an
+      OIDC discovery document served under the OP path rather than the host root.
+  - id: token-introspection-rfc7662
+    conforms: true
+    evidence: introspection_endpoint advertised in RFC 8414 metadata.
+  - id: token-revocation-rfc7009
+    conforms: true
+    evidence: revocation_endpoint advertised in RFC 8414 metadata.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Gigya REST responses use a proprietary errorCode/errorMessage envelope, not application/problem+json.
+  - id: scim2
+    conforms: false
+  - id: fapi
+    conforms: false
+notes: >-
+  Standards asserted from the fetched RFC 8414 metadata and public SAP CDC
+  documentation. No published SOC 2 / ISO 27001 certificate list was fetched at
+  the artifact level (SAP Trust Center is a JS app), so no `Compliance` pointer
+  is emitted; a TrustCenter link is wired instead.

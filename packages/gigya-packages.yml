@@ -1,0 +1,67 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  GitHub SAP organization (first-party SAP Customer Data Cloud / Gigya SDKs);
+  public package registries (npm/PyPI/RubyGems) probed for first-party libs.
+notes: >-
+  The first-party Gigya (SAP Customer Data Cloud) SDKs are distributed as source
+  from the SAP GitHub organization; they are not published under a first-party
+  name on npm/PyPI/RubyGems. The npm `gigya` / `node-gigya` and RubyGems `gigya`
+  packages are community wrappers (Scott Hovestadt, ajliv, Johalf Farina), not
+  first-party — excluded here.
+packages:
+  - language: swift
+    registry: github
+    name: gigya-swift-sdk
+    url: https://github.com/SAP/gigya-swift-sdk
+    platform: mobile
+    official: true
+  - language: java
+    registry: github
+    name: gigya-android-sdk
+    url: https://github.com/SAP/gigya-android-sdk
+    platform: mobile
+    official: true
+  - language: java
+    registry: github
+    name: gigya-java-sdk
+    url: https://github.com/SAP/gigya-java-sdk
+    platform: server
+    official: true
+  - language: php
+    registry: github
+    name: gigya-php-sdk
+    url: https://github.com/SAP/gigya-php-sdk
+    platform: server
+    official: true
+  - language: python
+    registry: github
+    name: gigya-python-sdk
+    url: https://github.com/SAP/gigya-python-sdk
+    platform: server
+    official: true
+  - language: csharp
+    registry: github
+    name: gigya-dotnet-sdk
+    url: https://github.com/SAP/gigya-dotnet-sdk
+    platform: server
+    official: true
+  - language: dart
+    registry: github
+    name: gigya-flutter-plugin
+    url: https://github.com/SAP/gigya-flutter-plugin
+    platform: mobile
+    official: true
+  - language: java
+    registry: github
+    name: gigya-react-native-plugin-for-sap-customer-data-cloud
+    url: https://github.com/SAP/gigya-react-native-plugin-for-sap-customer-data-cloud
+    platform: mobile
+    official: true
+  - language: dart
+    registry: github
+    name: gigya-nSS
+    url: https://github.com/SAP/gigya-nSS
+    platform: mobile
+    official: true
+    description: Native Screen-Sets rendering engine for SAP CDC (Gigya).

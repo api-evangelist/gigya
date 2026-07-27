@@ -1,0 +1,34 @@
+# Gigya (SAP Customer Data Cloud)
+
+> Gigya is a customer identity and access management (CIAM) platform — acquired by SAP in 2017 and delivered as SAP Customer Data Cloud. It offers Registration-as-a-Service (RaaS), social and passwordless login, progressive profiling, consent and preference management, and a unified customer profile store via a data-center-scoped REST API under accounts.{dc}.gigya.com.
+
+## APIs
+- [Gigya REST API (SAP Customer Data Cloud)](https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD): Accounts, identity, social login, consent, and profile-data REST API. Base host accounts.us1.gigya.com (per data center: us1, eu1, eu2, au1, cn1, …).
+
+## Authentication
+- [Authentication profile](authentication/gigya-authentication.yml): API key + signed application/user secret (HMAC-SHA1) and OAuth 2.0 client-credentials (issuer https://oauth2.gigya.com).
+- [OAuth 2.0 authorization-server metadata (RFC 8414)](well-known/gigya-oauth-authorization-server.json)
+
+## SDKs
+- [Swift (iOS) SDK](https://github.com/SAP/gigya-swift-sdk)
+- [Android SDK](https://github.com/SAP/gigya-android-sdk)
+- [Java server SDK](https://github.com/SAP/gigya-java-sdk)
+- [PHP server SDK](https://github.com/SAP/gigya-php-sdk)
+- [Python server SDK](https://github.com/SAP/gigya-python-sdk)
+- [.NET server SDK](https://github.com/SAP/gigya-dotnet-sdk)
+- [Flutter plugin](https://github.com/SAP/gigya-flutter-plugin)
+- [React Native plugin](https://github.com/SAP/gigya-react-native-plugin-for-sap-customer-data-cloud)
+
+## Docs
+- [SAP Customer Data Cloud documentation](https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD)
+- [Developer portal (developers.gigya.com → SAP Help)](https://developers.gigya.com/)
+- [SAP GitHub organization](https://github.com/SAP)
+- [SAP Trust Center](https://www.sap.com/about/trust-center.html)
+- [Report a vulnerability](https://www.sap.com/report-a-vulnerability)
+
+## Artifacts
+- [Well-known index](well-known/gigya-well-known.yml)
+- [Packages / SDKs](packages/gigya-packages.yml)
+- [Conformance](conformance/gigya-conformance.yml)
+- [Domain security](security/gigya-domain-security.yml)
+- [Vulnerability disclosure](security/gigya-vulnerability-disclosure.yml)

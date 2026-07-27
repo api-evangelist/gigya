@@ -1,7 +1,26 @@
 aid: gigya
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gigya.png
 name: Gigya
-description: Gigya is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Gigya is a customer identity and access management (CIAM) platform, acquired by SAP in 2017
+  and now delivered as SAP Customer Data Cloud. It provides Registration-as-a-Service (RaaS), social and
+  passwordless login, progressive profiling, consent and preference management, and a unified customer
+  profile store, exposed through a data-center-scoped REST API (accounts, socialize, ds, and related services
+  under accounts.{dc}.gigya.com). Developers integrate via first-party SDKs for Web, iOS/Swift, Android,
+  Flutter, React Native, and server-side Java, PHP, Python, and .NET, authenticating with a site API key
+  plus signed application/user secrets or OAuth 2.0 client-credentials tokens. Originally a Mayfield-backed
+  venture, Gigya's technology now underpins SAP's customer data and identity offering.
 url: https://raw.githubusercontent.com/api-evangelist/gigya/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,67 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Identity
+- Authentication
+- CIAM
+- Customer Identity
+- OAuth
+- Single Sign-On
+- Consent Management
+- SAP
+apis:
+- name: Gigya REST API (SAP Customer Data Cloud)
+  description: Gigya / SAP Customer Data Cloud REST API for accounts, identity, social login, consent,
+    and profile data. Endpoints are data-center scoped under {service}.{dc}.gigya.com (e.g. accounts.us1.gigya.com)
+    and support both API-key + signed-secret authentication and OAuth 2.0 client-credentials.
+  humanURL: https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD
+  baseURL: https://accounts.us1.gigya.com
+  tags:
+  - Identity
+  - Authentication
+  - CIAM
+  properties:
+  - type: Documentation
+    url: https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD
+  - type: Authentication
+    url: authentication/gigya-authentication.yml
+common:
+- type: VulnerabilityDisclosure
+  url: security/gigya-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.sap.com/report-a-vulnerability
+- type: Documentation
+  url: https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD
+- type: DeveloperPortal
+  url: https://developers.gigya.com/
+- type: GitHubOrganization
+  url: https://github.com/SAP
+- type: TrustCenter
+  url: https://www.sap.com/about/trust-center.html
+- type: WellKnown
+  url: well-known/gigya-well-known.yml
+- type: Authentication
+  url: authentication/gigya-authentication.yml
+- type: Packages
+  url: packages/gigya-packages.yml
+- type: SDKs
+  url: packages/gigya-packages.yml
+- type: Conformance
+  url: conformance/gigya-conformance.yml
+- type: DomainSecurity
+  url: security/gigya-domain-security.yml
+- type: LLMsTxt
+  url: llms/gigya-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
