@@ -64,6 +64,53 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Gigya is a company surfaced as a portfolio company of mayfield and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Gigya is a customer identity and access management (CIAM) platform, acquired by SAP in 2017 and now delivered as SAP Customer Data Cloud. It provides Registration-as-a-Service (RaaS), social and passwordless login, progressive profiling, consent and preference management, and a unified customer profile store, exposed through a data-center-scoped REST API (accounts, socialize, ds, and related services under accounts.{dc}.gigya.com). Developers integrate via first-party SDKs for Web, iOS/Swift, Android, Flutter, React Native, and server-side Java, PHP, Python, and .NET, authenticating with a site API key plus signed application/user secrets or OAuth 2.0 client-credentials tokens. Originally a Mayfield-backed venture, Gigya's technology now underpins SAP's customer data and identity offering.
 
-Backed by: mayfield
+**Areas:** Company · Identity · Authentication · CIAM · Customer Identity · SSO · Consent Management · SAP
+
+## Gigya on APIs.io
+
+Everything profiled for Gigya is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/gigya/](https://apis.io/providers/gigya/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Gigya REST API (SAP Customer Data Cloud)](https://apis.io/apis/gigya/gigya-rest-api-sap-customer-data-cloud/) — Gigya / SAP Customer Data Cloud REST API for accounts, identity, social login, consent, and profile data. Endpoints are data-center scoped under…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Gigya Authentication](https://apis.io/security/gigya/gigya-authentication/)
+- [Gigya Domain Security](https://apis.io/security/gigya/gigya-domain-security/)
+- [Gigya Vulnerability Disclosure](https://apis.io/security/gigya/gigya-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://help.sap.com/docs/SAP_CUSTOMER_DATA_CLOUD)
+- [Security](https://www.sap.com/report-a-vulnerability)
+- [Trust centre](https://www.sap.com/about/trust-center.html)
+- [GitHub](https://github.com/SAP)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Gigya: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/gigya/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
